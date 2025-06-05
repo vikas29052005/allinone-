@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All In One Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- Adjusted global font color for better visibility -->
+<style>
+    body, h1, h2, h3, h4, h5, h6, p, span, a, li, label, input, button, select, div, section {
+        color: #1e293b !important; /* Tailwind's slate-800 for dark-on-light, improves contrast */
+    }
+    .bg-blue-600, .bg-gray-900, .text-white, .bg-gradient-to-br {
+        color: #fff !important;
+    }
+    .bg-white, .bg-gray-50, .bg-gray-100 {
+        color: #1e293b !important;
+    }
+</style>
+<!-- Navbar Brand: All In One Tech -->
+<nav class="flex justify-between items-center px-6 py-4 shadow-sm bg-white">
+    <!-- Left: Logo and Company Name -->
+    <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center bg-gradient-to-br from-blue-600 to-green-400 rounded-full p-2 shadow-lg">
+            <!-- Example SVG logo icon -->
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="url(#logoGradient)" />
+                <path d="M8 12l2 2 4-4" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                    <linearGradient id="logoGradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#2563eb"/>
+                        <stop offset="1" stop-color="#22d3ee"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+      <a href="index.html" class="inline-flex items-center focus:outline-none">
+        <span class="text-2xl font-extrabold bg-gradient-to-r from-blue-600 via-green-400 to-blue-400 bg-clip-text text-transparent tracking-tight drop-shadow">
+            All In One Tech
+        </span>
+    </a>
+        </span>
+    </div>
+    <!-- Right: Navbar Links and Actions -->
+    
+    <script>
+      // Dropdown hover and click support for Services and Categories
+      document.addEventListener('DOMContentLoaded', function () {
+        function setupDropdown(groupSelector) {
+          const group = document.querySelector(groupSelector);
+          if (!group) return;
+          const button = group.querySelector('button');
+          const dropdown = group.querySelector('div.absolute');
+          let timeout;
+
+          function openDropdown() {
+            clearTimeout(timeout);
+            dropdown.classList.remove('hidden');
+          }
+          function closeDropdown() {
+            timeout = setTimeout(() => dropdown.classList.add('hidden'), 150);
+          }
+
+          group.addEventListener('mouseenter', openDropdown);
+          group.addEventListener('mouseleave', closeDropdown);
+          button.addEventListener('focus', openDropdown);
+          button.addEventListener('blur', closeDropdown);
+          dropdown.addEventListener('mouseenter', openDropdown);
+          dropdown.addEventListener('mouseleave', closeDropdown);
+        }
+        setupDropdown('.group:nth-of-type(1)');
+        setupDropdown('.group:nth-of-type(2)');
+      });
+    </script>
+    <div class="flex gap-6 items-center">
+         <a href="about us.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+        <div class="relative group">
+            <div>
+                <button class="flex items-center gap-1 text-gray-700 hover:text-blue-600">
+                    Services
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="absolute top-8 left-0 hidden group-hover:block group-focus-within:block bg-white border shadow-md rounded-md z-10">
+                    <ul class="p-2">
+                        <li>
+                            <a href="wedD.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="appD.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">App Development</a>
+                        </li>
+                        <li>
+                            <a href="SEO.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">SEO Services</a>
+                        </li>
+                        <li>
+                            <a href="software.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Software Development</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<div class="relative group">
+    <div>
+        <button class="flex items-center gap-1 text-gray-700 hover:text-blue-600">
+            Categories
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 9l-7 7-7-7" />
+            </svg>
+        </button>
+        <div class="absolute top-8 left-0 hidden group-hover:block group-focus-within:block bg-white border shadow-md rounded-md z-10">
+            <ul class="p-2">
+                <li>
+                    <a href="graphicD.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Graphic Design</a>
+                </li>
+                <li>
+                    <a href="archiD.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Architecture Design</a>
+                </li>
+                <li>
+                    <a href="itsolu.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">IT Solutions</a>
+                </li>
+                <li>
+                    <a href="digimar.html" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Digital Marketing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact Us</a>
+        <!-- Language Dropdown -->
+        <div class="relative">
+            <select class="border border-gray-300 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 bg-white">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+        <!-- Sign In / Join Buttons -->
+        <a href="signin.html" class="px-5 py-2 rounded-full bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition">Sign In</a>
+        <a href="signin.html" class="px-5 py-2 rounded-full bg-green-600 text-white font-semibold shadow hover:bg-green-700 transition">Join</a>
+        <div id="auth-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative">
+                <button id="close-auth-modal" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-2xl font-bold focus:outline-none">&times;</button>
+                <div class="flex justify-center mb-6">
+                    <button id="show-signin" class="px-4 py-2 font-semibold rounded-l-full bg-blue-600 text-white focus:outline-none">Sign In</button>
+                    <button id="show-join" class="px-4 py-2 font-semibold rounded-r-full bg-gray-200 text-blue-700 focus:outline-none">Join</button>
+                </div>
+                <!-- Sign In Form -->
+                <form id="signin-form">
+                    <h3 class="text-xl font-bold mb-4 text-blue-700">Sign In</h3>
+                    <input type="email" placeholder="Email" class="w-full mb-3 px-4 py-2 border rounded focus:outline-none" required>
+                    <input type="password" placeholder="Password" class="w-full mb-3 px-4 py-2 border rounded focus:outline-none" required>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-full font-semibold hover:bg-green-700 transition">Sign In</button>
+                </form>
+                <!-- Join Form -->
+                <form id="join-form" class="hidden">
+                    <h3 class="text-xl font-bold mb-4 text-blue-700">Join</h3>
+                    <input type="text" placeholder="Name" class="w-full mb-3 px-4 py-2 border rounded focus:outline-none" required>
+                    <input type="email" placeholder="Email" class="w-full mb-3 px-4 py-2 border rounded focus:outline-none" required>
+                    <input type="password" placeholder="Password" class="w-full mb-3 px-4 py-2 border rounded focus:outline-none" required>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-full font-semibold hover:bg-green-700 transition">Join</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            // Modal logic
+            function showModal(form) {
+                document.getElementById('auth-modal').classList.remove('hidden');
+                document.getElementById('signin-form').classList.toggle('hidden', form !== 'signin');
+                document.getElementById('join-form').classList.toggle('hidden', form !== 'join');
+                document.getElementById('show-signin').classList.toggle('bg-blue-600', form === 'signin');
+                document.getElementById('show-signin').classList.toggle('text-white', form === 'signin');
+                document.getElementById('show-signin').classList.toggle('bg-gray-200', form !== 'signin');
+                document.getElementById('show-signin').classList.toggle('text-blue-700', form !== 'signin');
+                document.getElementById('show-join').classList.toggle('bg-blue-600', form === 'join');
+                document.getElementById('show-join').classList.toggle('text-white', form === 'join');
+                document.getElementById('show-join').classList.toggle('bg-gray-200', form !== 'join');
+                document.getElementById('show-join').classList.toggle('text-blue-700', form !== 'join');
+            }
+            document.querySelectorAll('a[href="signin.html"]').forEach(el => {
+                el.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showModal(this.textContent.trim().toLowerCase() === 'join' ? 'join' : 'signin');
+                });
+            });
+            document.getElementById('close-auth-modal').onclick = function() {
+                document.getElementById('auth-modal').classList.add('hidden');
+            };
+            document.getElementById('show-signin').onclick = function() { showModal('signin'); };
+            document.getElementById('show-join').onclick = function() { showModal('join'); };
+            // Optional: prevent form submission for demo
+            document.getElementById('signin-form').onsubmit = function(e) { e.preventDefault(); };
+            document.getElementById('join-form').onsubmit = function(e) { e.preventDefault(); };
+        </script>
+        
+    </div>
+</nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Architecture Design Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        :root {
+            --primary: #22223b;
+            --secondary: #4a4e69;
+            --accent: #9a8c98;
+            --bg: #f2e9e4;
+            --white: #fff;
+            --shadow: 0 2px 8px rgba(34,34,59,0.07);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+            min-height: 100vh;
+        }
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            color: var(--primary);
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--secondary);
+            margin-left: 2rem;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.2s;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            letter-spacing: 1px;
+        }
+        .categories {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .category {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            flex: 1 1 300px;
+            min-width: 280px;
+            transition: transform 0.2s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .category:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(34,34,59,0.13);
+        }
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .project-card {
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 8px 24px rgba(34,34,59,0.13);
+            transform: translateY(-4px) scale(1.01);
+        }
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--bg);
+        }
+        .project-info {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        .project-desc {
+            font-size: 0.97rem;
+            color: var(--primary);
+            margin-bottom: 0.7rem;
+        }
+        .project-price {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-location {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        .animated-btn {
+            background: var(--secondary);
+            color: var(--white);
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(74,78,105,0.07);
+            outline: none;
+            margin-top: 0.5rem;
+            align-self: flex-start;
+            position: relative;
+            overflow: hidden;
+        }
+        .animated-btn::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(154,140,152,0.15);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.4s, height 0.4s;
+            z-index: 0;
+        }
+        .animated-btn:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 4px 16px rgba(154,140,152,0.13);
+        }
+        .animated-btn:hover::after {
+            width: 200%;
+            height: 200%;
+        }
+        /* Map Section */
+        #map {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+        /* Responsive */
+        @media (max-width: 800px) {
+            .categories {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body></body>
+    <header style="justify-content: center;">
+        <div class="logo">ArchDesign</div>
+    </header>
+
+    <main>
+        <section id="categories">
+            <div class="section-title">Our Expertise</div>
+            <div class="categories">
+                <div class="category">
+                    <div class="category-title">Residential</div>
+                    <div>Modern homes, villas, apartments, and sustainable living spaces.</div>
+                </div>
+                <div class="category">
+                    <div class="category-title">Commercial</div>
+                    <div>Office buildings, retail spaces, and innovative work environments.</div>
+                </div>
+                <div class="category">
+                    <div class="category-title">Public Spaces</div>
+                    <div>Parks, museums, and community centers with unique identities.</div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="section-title">Featured Projects</div>
+            <div class="projects">
+                <div class="project-card" data-lat="40.7128" data-lng="-74.0060">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Modern Villa AI Sample">
+                    <div class="project-info">
+                        <div>
+                            <div class="project-title">Skyline Villa</div>
+                            <div class="project-desc">A modern villa with open spaces and eco-friendly materials, designed using AI-driven concepts.</div>
+                            <div class="project-location">New York, USA</div>
+                            <div class="project-price">$1,200,000</div>
+                        </div>
+                        <button class="animated-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-lat="51.5074" data-lng="-0.1278">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Office Tower AI Sample">
+                    <div class="project-info">
+                        <div>
+                            <div class="project-title">Urban Office Tower</div>
+                            <div class="project-desc">A sustainable office tower with smart energy systems and AI-optimized layouts.</div>
+                            <div class="project-location">London, UK</div>
+                            <div class="project-price">$3,500,000</div>
+                        </div>
+                        <button class="animated-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-lat="35.6895" data-lng="139.6917">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Community Center AI Sample">
+                    <div class="project-info">
+                        <div>
+                            <div class="project-title">Harmony Community Center</div>
+                            <div class="project-desc">A vibrant public space blending tradition and innovation, designed with AI assistance.</div>
+                            <div class="project-location">Tokyo, Japan</div>
+                            <div class="project-price">$900,000</div>
+                        </div>
+                        <button class="animated-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+         <br>
+                <section id="about">
+            <div class="section-title">About Our Work</div>
+            <p>
+                At ArchDesign Studio, we blend creativity, technology, and sustainability to deliver exceptional architecture. Our AI-powered design process ensures efficiency, innovation, and a unique touch for every project. Explore our portfolio to see how we shape spaces across the globe.
+            </p>
+        </section>
+         <br>
+          <br>
+        <section id="map-section">
+            <div class="section-title">Our Projects Around the World</div>
+            <div id="map"></div>
+        </section>
+         <br>
+          <br>
+
+    </main>
+    <!-- Leaflet JS for Map -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize map
+        var map = L.map('map').setView([20, 0], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add project markers
+        document.querySelectorAll('.project-card').forEach(function(card) {
+            var lat = card.getAttribute('data-lat');
+            var lng = card.getAttribute('data-lng');
+            var title = card.querySelector('.project-title').textContent;
+            var img = card.querySelector('.project-img').src;
+            var price = card.querySelector('.project-price').textContent;
+            var desc = card.querySelector('.project-desc').textContent;
+            var popupContent = `
+                <div style="font-family:Montserrat,sans-serif;min-width:180px;">
+                    <img src="${img}" alt="${title}" style="width:100%;border-radius:6px;margin-bottom:8px;">
+                    <strong>${title}</strong><br>
+                    <span style="color:#9a8c98;">${price}</span><br>
+                    <span style="font-size:0.95em;">${desc}</span>
+                </div>
+            `;
+            L.marker([lat, lng]).addTo(map).bindPopup(popupContent);
+        });
+    </script>
+</body>
+</html>
